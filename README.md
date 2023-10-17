@@ -40,8 +40,9 @@ The system is geared toward air travel customers--specifically Southwest but pot
 2. See the [deployment configuration](https://github.com/paulboschert/automated-airline-checkin/blob/master/.github/workflows/main.yml)
 
 ## Hosting
- * ~~Heroku has been the hosting provider: https://automated-airline-checkin-f2930bf3523f.herokuapp.com/)~~~ -- This is currently disabled.
  * See the [Procfile](https://github.com/paulboschert/automated-airline-checkin/blob/master/Procfile).  
+
+Heroku has been the hosting provider: https://automated-airline-checkin-f2930bf3523f.herokuapp.com/)~~ -- This is currently disabled.
 
 # Current-state architecture
 ![](airline automated check-in current.drawio.png)
