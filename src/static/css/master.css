@@ -1,0 +1,46 @@
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00dd00;
+}
+
+body, p {
+    font-family: Arial, sans-serif;
+    font: 12px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font: 24px;
+}
+
+h2, h3 {
+    font-family: Arial, sans-serif;
+    font: 20px;
+}
+
+img {
+    border: 0;
+}
+
+#title {
+    border-bottom: 0px solid #000000;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #00ff66;
+}
+
+
+
