@@ -45,10 +45,14 @@ The system is geared toward air travel customers--specifically Southwest but pot
 ~~Heroku has been the hosting provider: https://automated-airline-checkin-f2930bf3523f.herokuapp.com/)~~ -- This is currently disabled.
 
 # Current-state architecture
-![](https://github.com/paulboschert/automated-airline-checkin/blob/master/airline automated check-in current.drawio.png)
+There are many trade offs I made for simplicity:
+1. Chose to use an sqlite database instead of something like MySQL.  This eases deployment and allows me to get up and going quickly.
+1. For now we're not scheduling the work, we're just doing it directly when a form is submitted.  Ideally this would be scheduled and is planned for the future.  Amazon Lambda expressions would be a good service to use in this instance.
+
+![](https://github.com/paulboschert/automated-airline-checkin/blob/master/airline automated check-in current.drawio.png?raw=true)
 
 # Complete/Future architecture
-![](https://github.com/paulboschert/automated-airline-checkin/blob/master/airline automated check-in future.drawio.png)
+![](https://github.com/paulboschert/automated-airline-checkin/blob/master/airline automated check-in future.drawio.png?raw=true)
 
 
 
