@@ -12,13 +12,6 @@ This system allows users to enter their details (name, confirmation number), and
 ## Who is this for
 The system is geared toward air travel customers--specifically Southwest but potentially more in the future.  It is unique as it solves a frustrating task for many and automates the process.
 
-
-# Installation
-
-1. It makes a call to api.weather.gov to retreive the weather forecast.  It displays the start time and the temperature in F.
-Then it averages the forecast temperatures.
-
-
 # Installation/Development
 1. Install dependencies
 
@@ -32,20 +25,29 @@ Then it averages the forecast temperatures.
    FLASK_APP=src/app.py flask run
    ```
 1. Open a web browser and go to the URL: http://127.0.0.1:5000/
-1. Click on: Get new 14-day forecast for Boulder, CO
+1. Enter your Southwest confirmation number and last name
+
 ## Metrics and Health
 1. Metrics are at: http://127.0.0.1:5000/metrics
 1. Health check is at: http://127.0.0.1:5000/health
 
-# Deployment
+# Continuous Development
+1. Unit tests are automatically performed when a PR is submitted.  Checks have been added before merging can take place.
+1. Once a PR is merged, unit tests are again automatically performed.
 
-# Hosting
+# Continuous Deployment
+1. Deployment is automated with GitHub Heroku Integration.
+2. See the [deployment configuration](https://github.com/paulboschert/automated-airline-checkin/blob/master/.github/workflows/main.yml)
 
-
-# Complete architecture
-![](airline automated check-in future.drawio.png)
+## Hosting
+ * ~~Heroku has been the hosting provider: https://automated-airline-checkin-f2930bf3523f.herokuapp.com/)~~~ -- This is currently disabled.
+ * See the [Procfile](https://github.com/paulboschert/automated-airline-checkin/blob/master/Procfile).  
 
 # Current-state architecture
 ![](airline automated check-in current.drawio.png)
+
+# Complete/Future architecture
+![](airline automated check-in future.drawio.png)
+
 
 

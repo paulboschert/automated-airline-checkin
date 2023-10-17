@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2023-10-17T10:13:02.283Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0" etag="QKFpuDK5psE5Bli4GRri" version="21.6.2" type="device">
+  <diagram name="Page-1" id="eu7qMN5CvWjbm2lcWE_K">
+    <mxGraphModel dx="955" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fuZp-VxLnqiwLf1VORub-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fuZp-VxLnqiwLf1VORub-1" target="fuZp-VxLnqiwLf1VORub-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="943" />
+              <mxPoint x="140" y="943" />
+            </Array>
+            <mxPoint x="439" y="943" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rimQK-4Kf34BA8MIcbwN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fuZp-VxLnqiwLf1VORub-1" target="fuZp-VxLnqiwLf1VORub-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rimQK-4Kf34BA8MIcbwN-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fuZp-VxLnqiwLf1VORub-1" target="fuZp-VxLnqiwLf1VORub-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="770" />
+              <mxPoint x="350" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-1" value="&lt;div&gt;Web App&lt;/div&gt;&lt;div&gt;1. User enters flight information (first name, last name, confirmation number).&amp;nbsp; This adds a message to the flight information collector queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. User wants to see flight check-in status (gets back confirmation number, flight time, and whether or not their checked in yet).&amp;nbsp; This reads from the DB and displays the information&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="670" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fuZp-VxLnqiwLf1VORub-2" target="fuZp-VxLnqiwLf1VORub-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.005;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="fuZp-VxLnqiwLf1VORub-1" target="fuZp-VxLnqiwLf1VORub-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="740" />
+              <mxPoint x="440" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-2" value="&lt;div&gt;Flight information collector service&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Reads from flight information message queue&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Then sends HTTP GET request for flight time given first name, last name, confirmation number&lt;/div&gt;&lt;div&gt;- Writes flight information to DB&lt;/div&gt;&lt;div&gt;- Adds message to check-in message queue for when a job should be scheduled&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="310" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-4" value="Southwest Airlines Flight Information API" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fuZp-VxLnqiwLf1VORub-5" target="fuZp-VxLnqiwLf1VORub-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-5" value="&lt;div&gt;User&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="740" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-6" value="&lt;div&gt;User flight details database&lt;/div&gt;&lt;div&gt;- First name&lt;/div&gt;&lt;div&gt;- Last name&lt;/div&gt;&lt;div&gt;- Confirmation number&lt;/div&gt;&lt;div&gt;- Flight time&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="70" y="760" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-7" value="Southwest Airlines Flight Check-In API" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="fuZp-VxLnqiwLf1VORub-13" target="fuZp-VxLnqiwLf1VORub-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fuZp-VxLnqiwLf1VORub-13" value="&lt;div&gt;Flight check-in service&lt;/div&gt;&lt;div&gt;- Send HTTP POST request to check-in with query parameters:&lt;/div&gt;&lt;div&gt;- first name&lt;/div&gt;&lt;div&gt;- last name&lt;/div&gt;&lt;div&gt;- confirmation number&lt;/div&gt;&lt;div&gt;- Then writes to DB that a check-in was successful&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="110" width="200" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
